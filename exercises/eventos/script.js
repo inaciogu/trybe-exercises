@@ -123,3 +123,20 @@ function dayMouseLeave () {
 };
 dayMouseOver();
 dayMouseLeave();
+
+function createTask (taskName) {
+    let taskList = document.querySelector('.my-tasks');
+    let task = document.createElement('span');
+
+    task.innerHTML = taskName;
+    taskList.appendChild(task);
+}
+createTask('Cozinhar');
+
+
+
+    
+
+
+
+

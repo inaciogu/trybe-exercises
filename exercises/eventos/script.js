@@ -103,3 +103,11 @@ function changeText(array) {
 changeText([4, 11, 18, 25]);
 
 
+function dayMouseOver () {
+    let days = document.querySelector('#days');
+
+    days.addEventListener('mouseover', function(event) {
+        event.target.style.fontSize = '35px';
+        event.target.style.fontWeight = '600';
+    })
+};

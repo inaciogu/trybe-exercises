@@ -85,4 +85,21 @@ function createFridayButton (name) {
 }
 createFridayButton('Sexta-Feira');
 
+function changeText(array) {
+    let fridayButton = document.querySelector('#btn-friday');
+    let fridays = document.querySelectorAll('.friday');
+    let newText = 'Dia de maldade!!!'
+
+    fridayButton.addEventListener('click', function() {
+        for (let i = 0; i < fridays.length; i+=1) {
+            if (fridays[i].innerHTML !== newText) {
+                fridays[i].innerHTML = newText
+            } else {
+                fridays[i].innerHTML = array[i];
+            }
+        }
+    })
+};
+changeText([4, 11, 18, 25]);
+
 

@@ -133,6 +133,15 @@ function createTask (taskName) {
 }
 createTask('Cozinhar');
 
+function colorTask (color) {
+    let taskList = document.querySelector('.my-tasks')
+    let newtask = document.createElement('div');
+
+    newtask.className = 'task';
+    newtask.style.backgroundColor = color;
+    taskList.appendChild(newtask);
+}
+colorTask('yellow')
 
 
     

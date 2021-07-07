@@ -74,5 +74,15 @@ function changeColor() {
 };
 changeColor();
 
+function createFridayButton (name) {
+    let buttonContainer = document.querySelector('.buttons-container');
+    let button = document.createElement('button');
+    let buttonId = 'btn-friday';
+
+    button.innerHTML = name;
+    button.id = buttonId;
+    buttonContainer.appendChild(button);
+}
+createFridayButton('Sexta-Feira');
 
 

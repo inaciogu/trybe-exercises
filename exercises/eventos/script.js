@@ -111,3 +111,15 @@ function dayMouseOver () {
         event.target.style.fontWeight = '600';
     })
 };
+
+function dayMouseLeave () {
+    let days = document.querySelector('#days')
+
+    days.addEventListener('mouseout', function(event){
+        event.target.style.fontSize = '20px'
+        event.target.style.fontWeight = '200';
+    })
+
+};
+dayMouseOver();
+dayMouseLeave();

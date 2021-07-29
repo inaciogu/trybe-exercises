@@ -1,1 +1,1 @@
-Estou na parte de fundamentos do desenvolvimento web, atualmente aprendendo sobre git, github e internet. Logo entraremos na parte de html css e js.
+Este Repositório contém os exercicios feitos por Gustavo Inácio enquanto estuda na TRYBE

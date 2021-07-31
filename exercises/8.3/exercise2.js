@@ -62,6 +62,32 @@ const books = [
     releaseYear: 1928,
   },
 ];
+const expectedResult = [
+  {
+    age: 31,
+    author: 'Isaac Asimov',
+  },
+  {
+    age: 38,
+    author: 'H. P. Lovecraft',
+  },
+  {
+    age: 39,
+    author: 'Stephen King',
+  },
+  {
+    age: 43,
+    author: 'George R. R. Martin',
+  },
+  {
+    age: 45,
+    author: 'Frank Herbert',
+  },
+  {
+    age: 62,
+    author: 'J. R. R. Tolkien',
+  },
+];
 
 const objBooks = books.map((bookDetails) =>(
   {
@@ -69,6 +95,7 @@ const objBooks = books.map((bookDetails) =>(
     age: bookDetails.releaseYear - bookDetails.author.birthYear,
   }
 )).sort((detail1, detail2) => detail1.age - detail2.age);
-console.log(objBooks)
+/* console.log(objBooks) */
+assert.deepStrictEqual(objBooks, expectedResult);
 
  

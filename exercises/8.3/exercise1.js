@@ -63,8 +63,17 @@ const books = [
     releaseYear: 1928,
   },
 ];
+const expectedResult = [
+  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+  'Fundação - Ficção Científica - Isaac Asimov',
+  'Duna - Ficção Científica - Frank Herbert',
+  'A Coisa - Terror - Stephen King',
+  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+];
 
-const arrayOfBooks = books.map((expect) => {
-  return `${expect.name.toUpperCase().split(' ').join('_')} - ${expect.genre.toUpperCase().split(' ').join('_')} - ${expect.author.name.toUpperCase().split(' ').join('_')}`;
+const arrayOfBooks = books.map((expect) =>  {
+  return `${expect.name} - ${expect.genre} - ${expect.author.name}`;
 });
-console.log(arrayOfBooks);
+/* console.log(arrayOfBooks); */
+assert.deepStrictEqual(arrayOfBooks, expectedResult);
